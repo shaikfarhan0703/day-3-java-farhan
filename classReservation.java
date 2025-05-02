@@ -1,0 +1,12 @@
+public class Reservation{
+    public String getReservationDetails(String hotelName, String guestName, int nights){
+        return "\nHotel Name : " + hotelName + "\nGuest Name : " + guestName + "\nNights : " + nights;
+    }
+    public static void main(String[] args){
+        Reservation res = new Reservation();
+        System.out.println(res.getReservationDetails("Grand Palace", "David", 3));
+        System.out.println("----------------------------------");
+        System.out.println(res.getReservationDetails("Grand Palace", "Maria", 2));
+        System.out.println("----------------------------------");
+    }
+}
